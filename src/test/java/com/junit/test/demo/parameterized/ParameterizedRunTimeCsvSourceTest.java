@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 public class ParameterizedRunTimeCsvSourceTest {
 	@DisplayName("Should calculate the correct sum")
-    @ParameterizedTest(name = "{index} => number1w={0}, number2={1}, result={2}")
+    @ParameterizedTest(name = "{index} => number1={0}, number2={1}, result={2}")
     @CsvSource({
             "10, 5,  15",
             "9,  1,  10",

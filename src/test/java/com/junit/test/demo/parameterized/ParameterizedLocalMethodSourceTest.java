@@ -30,7 +30,9 @@ public class ParameterizedLocalMethodSourceTest {
 	}
 
 	private static Stream<Arguments> sumProvider() {
-		return Stream.of(Arguments.of(11, 9, 20), Arguments.of(4, 26, 30));
+		return Stream.of(Arguments.of(11, 9, 20), 
+				         Arguments.of(4, 26, 30),
+				         Arguments.of(-17, -23, 40));
 	}
 
 }
