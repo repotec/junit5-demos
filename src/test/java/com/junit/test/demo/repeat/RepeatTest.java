@@ -20,11 +20,11 @@ public class RepeatTest {
         logger.info(String.format("Now about to execute repetition %d of %d for %s", curRepetition, totalRepetitions, methodName));
     }
  
-    @RepeatedTest(5)
+    @RepeatedTest(value=5, name = "{displayName}. Repeatition {currentRepeatition} of {totalRepeatition}")
     void repeat_test() {
     }
  
-    @RepeatedTest(5)
+    @RepeatedTest(value=5, name = "{displayName}. Repeatition {currentRepeatition} of {totalRepeatition}")
     void repeat_repetitionInfo_test(RepetitionInfo repetitionInfo) {
         
     }
