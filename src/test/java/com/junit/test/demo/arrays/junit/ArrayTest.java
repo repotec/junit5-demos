@@ -1,4 +1,4 @@
-package com.junit.test.demo.arrays;
+package com.junit.test.demo.arrays.junit;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
