@@ -6,6 +6,6 @@ import org.junit.jupiter.api.Test;
 public class TestForProduction {
 	@Test
 	@Tag("production")
-	public void dummyTest() {
+	public void dummyProductionTest() {
 	}
 }
