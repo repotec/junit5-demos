@@ -6,7 +6,13 @@ import org.junit.jupiter.api.Test;
 public class TestForUAT {
 	@Test
 	@Tag(value = "production")
-	public void dummyUATTest() {
-		
+	public void testA() {
+		System.out.println("TestA ==>" + Thread.currentThread().getName());
+	}
+
+	@Test
+	@Tag(value = "production")
+	public void testB() {
+		System.out.println("TestB ==>" +Thread.currentThread().getName());
 	}
 }

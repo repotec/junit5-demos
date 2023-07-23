@@ -90,8 +90,15 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${maven-surefire-plugin.version}</version>
 				<configuration>
-					<parallel>classes</parallel>
-					<threadCount>5</threadCount>
+					<!--<parallel>classes</parallel>-->
+					<!--<threadCount>5</threadCount>-->
+
+					<!--<properties>
+						<configurationParameters>
+							junit.jupiter.execution.parallel.enabled=true
+							junit.jupiter.execution.parallel.mode.default=concurrent
+						</configurationParameters>
+					</properties>-->
 
 					<skipTests>false</skipTests>
 					<testFailureIgnore>false</testFailureIgnore>
@@ -99,8 +106,8 @@
 					<statelessTestsetReporter implementation="org.apache.maven.plugin.surefire.extensions.junit5.JUnit5Xml30StatelessReporter">
 						<usePhrasedTestCaseMethodName>true</usePhrasedTestCaseMethodName>
 					</statelessTestsetReporter>
-<!--					<includes>com/junit/test/demo/conditions/EnabledDisabledIfTest</includes>-->
-<!--					<excludes>com/junit/test/demo/exception/ExceptionTest</excludes>-->
+					<!--<includes>com/junit/test/demo/conditions/EnabledDisabledIfTest</includes>
+  					    <excludes>com/junit/test/demo/exception/ExceptionTest</excludes>-->
 				</configuration>
 			</plugin>
 

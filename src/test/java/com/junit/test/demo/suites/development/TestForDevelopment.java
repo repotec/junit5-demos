@@ -7,7 +7,13 @@ public class TestForDevelopment {
 	
 	@Test
 	@Tag(value = "dev")
-	public void dummyTest() {
-		
+	public void dummyTestA() {
+		System.out.println(Thread.currentThread().getName());
+	}
+	
+	@Test
+	@Tag(value = "dev")
+	public void dummyTestB() {
+		System.out.println(Thread.currentThread().getName());
 	}
 }
